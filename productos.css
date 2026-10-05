@@ -1,0 +1,20 @@
+/* ===== PRODUCTOS / EL MAIZAL ===== */
+.productos-section{padding:110px 5vw;background:#EDEDED;color:#1D1E1B;}
+.productos-header{max-width:1180px;margin:0 auto 38px;text-align:center;}
+.productos-eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:#434F24;margin-bottom:12px;}
+.productos-header h2{font-family:"Playfair Display",serif;font-size:clamp(2.4rem,5vw,4.8rem);margin:0 0 12px;line-height:.95;}
+.productos-header p{max-width:620px;margin:0 auto;color:#422A13;}
+.productos-filtros{max-width:1180px;margin:0 auto 45px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
+.producto-filtro{border:1px solid #422A13;background:transparent;color:#422A13;border-radius:999px;padding:10px 18px;font:inherit;cursor:pointer;transition:.2s ease;}
+.producto-filtro:hover,.producto-filtro.is-active{background:#434F24;color:#fff;border-color:#434F24;}
+.productos-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}
+.producto-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 30px rgba(29,30,27,.08);display:flex;flex-direction:column;}
+.producto-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+.producto-card-body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1;}
+.producto-card h3{margin:0;font-family:"Playfair Display",serif;font-size:1.45rem;color:#422A13;}
+.producto-desc{margin:0;color:#1D1E1B;opacity:.82;font-size:.95rem;}
+.producto-nota{margin:0;font-size:.82rem;color:#434F24;font-style:italic;}
+.producto-precio{margin-top:auto;padding-top:10px;font-weight:700;color:#E59321;font-size:1.08rem;}
+.producto-empty{grid-column:1/-1;text-align:center;padding:40px;}
+@media(max-width:900px){.productos-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:600px){.productos-section{padding:80px 20px}.productos-grid{grid-template-columns:1fr}.productos-filtros{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:6px}.producto-filtro{white-space:nowrap}}
