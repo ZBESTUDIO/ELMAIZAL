@@ -1,32 +1,28 @@
-# EL MAIZAL — Sitio web
+# EL MAIZAL — versión de código
 
-Sitio web estático para El Maizal.
+Proyecto web estático hecho con HTML, CSS y JavaScript.
 
-## Estructura
+## Carpetas
 
-- `index.html` — contenido y estructura.
-- `css/style.css` — diseño y responsive.
-- `js/script.js` — menú móvil y año automático.
-- `images/` — aquí van logo y fotografías.
+- `index.html` → estructura y contenido.
+- `css/style.css` → diseño completo y responsive.
+- `js/script.js` → menú móvil y año automático.
+- `images/` → aquí se guardarán logo y fotografías.
 
-## Pendiente antes de la versión final
+## Próximo reemplazo de contenido
 
-1. Logo oficial.
-2. Foto principal.
-3. Texto definitivo de “Quiénes somos”.
-4. Dirección.
-5. Horarios.
-6. Enlace de Google Maps.
-7. Lista real de productos, ingredientes, precios y fotografías.
-8. Archivos de las tipografías oficiales si se quieren cargar exactamente en la web.
+Los textos que dicen "pendiente" son intencionales. Se reemplazarán cuando el cliente entregue:
 
-## Identidad
+- Logo oficial en archivo.
+- Foto principal.
+- Texto de "Quiénes somos".
+- Dirección.
+- Horarios.
+- Link de Google Maps.
+- Productos.
+- Ingredientes.
+- Precios.
+- Fotos de productos.
 
-Colores definidos en el Key Visual:
-- `#EDEDED`
-- `#1D1E1B`
-- `#422A13`
-- `#434F24`
-- `#E59321`
-
-El código usa una tipografía web temporal hasta incorporar los archivos oficiales de la marca.
+La identidad visual usa los colores definidos en el Key Visual de El Maizal.
+Las tipografías oficiales indicadas en el Key Visual son Afire Love para títulos y Thorn And Thistle para cuerpo. En esta primera versión se usan tipografías web temporales; cuando tengamos los archivos de las fuentes, se pueden incorporar localmente.

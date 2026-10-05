@@ -7,132 +7,165 @@
   <title>El Maizal | El sabor que te devuelve a casa</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-  <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="El Maizal, inicio">
-      <span class="brand-mark">EL</span>
-      <span class="brand-name">EL MAIZAL</span>
+<body>
+  <header class="header">
+    <a href="#inicio" class="logo" aria-label="El Maizal">
+      <span class="logo-circle">EM</span>
+      <span>EL MAIZAL</span>
     </a>
 
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+    <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
 
-    <nav class="nav" aria-label="Navegación principal">
+    <nav class="nav">
       <a href="#nosotros">Quiénes somos</a>
       <a href="#menu">Menú</a>
       <a href="#visitanos">Cómo llegar</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-pattern"></div>
-      <div class="hero-content">
-        <p class="eyebrow">AREPAS RELLENAS · PLÁTANOS ASADOS · PATACONES</p>
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">AREPAS RELLENAS · PLÁTANOS ASADOS · PATACONES</p>
         <h1>El sabor que<br><em>te devuelve a casa.</em></h1>
-        <p class="hero-text">
-          Sabores hechos para compartir, recordar y decir:
+        <p class="hero-description">
+          De esos sabores que uno prueba y piensa:
           <strong>“mijo, ¿quiere repetir?”</strong>
         </p>
-        <a class="button button-primary" href="#menu">Ver el menú</a>
+        <a class="btn btn-green" href="#menu">Ver nuestro menú <span>↓</span></a>
       </div>
-      <div class="hero-image image-placeholder">
-        <span>Foto principal</span>
-        <small>Reemplazar por imagen de portada</small>
+
+      <div class="hero-visual photo-placeholder">
+        <div class="placeholder-content">
+          <span>FOTO PRINCIPAL</span>
+          <small>La reemplazaremos con la fotografía de El Maizal</small>
+        </div>
+      </div>
+
+      <div class="hero-sticker">
+        <span>Hecho con</span>
+        <strong>sabor<br>de casa</strong>
       </div>
     </section>
 
-    <section class="intro section" id="nosotros">
-      <div class="section-label">01 / QUIÉNES SOMOS</div>
-      <div class="intro-grid">
+    <section class="about" id="nosotros">
+      <div class="section-tag">01 / QUIÉNES SOMOS</div>
+
+      <div class="about-grid">
         <div>
-          <h2>Un pedacito de casa<br><em>en cada bocado.</em></h2>
+          <h2>Hay sabores que<br><em>se sienten como casa.</em></h2>
         </div>
-        <div>
-          <p class="lead">
-            Aquí irá el texto definitivo de “Quiénes somos” que entregue el cliente.
+
+        <div class="about-copy">
+          <p class="big-copy">
+            Aquí irá el texto definitivo que entregue el cliente sobre la historia
+            de El Maizal.
           </p>
           <p>
-            Este espacio está pensado para contar la historia de El Maizal,
-            su manera de cocinar y ese sabor que conecta con los recuerdos de casa.
+            Queremos que esta sección cuente quiénes son, de dónde nace la idea
+            y qué hace especial cada preparación.
           </p>
         </div>
       </div>
-    </section>
 
-    <section class="menu-section section" id="menu">
-      <div class="section-label">02 / NUESTRO MENÚ</div>
-      <div class="section-heading">
-        <div>
-          <h2>Para que se le haga<br><em>agua la boca.</em></h2>
-        </div>
-        <p>Productos, ingredientes y precios. Aquí reemplazaremos estos ejemplos con la carta real.</p>
-      </div>
-
-      <div class="products-grid">
-        <article class="product-card">
-          <div class="product-image image-placeholder"><span>Producto 01</span></div>
-          <div class="product-info">
-            <div class="product-title-row">
-              <h3>Nombre del producto</h3>
-              <span class="price">$00.000</span>
-            </div>
-            <p>Ingredientes del producto aquí.</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image image-placeholder"><span>Producto 02</span></div>
-          <div class="product-info">
-            <div class="product-title-row">
-              <h3>Nombre del producto</h3>
-              <span class="price">$00.000</span>
-            </div>
-            <p>Ingredientes del producto aquí.</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image image-placeholder"><span>Producto 03</span></div>
-          <div class="product-info">
-            <div class="product-title-row">
-              <h3>Nombre del producto</h3>
-              <span class="price">$00.000</span>
-            </div>
-            <p>Ingredientes del producto aquí.</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image image-placeholder"><span>Producto 04</span></div>
-          <div class="product-info">
-            <div class="product-title-row">
-              <h3>Nombre del producto</h3>
-              <span class="price">$00.000</span>
-            </div>
-            <p>Ingredientes del producto aquí.</p>
-          </div>
-        </article>
+      <div class="pattern-strip" aria-hidden="true">
+        <span>🌽</span><span>🍌</span><span>🌽</span><span>🍌</span><span>🌽</span>
       </div>
     </section>
 
-    <section class="visit section" id="visitanos">
-      <div class="visit-card">
-        <div>
-          <div class="section-label">03 / CÓMO LLEGAR</div>
-          <h2>Venga pues,<br><em>lo esperamos.</em></h2>
-          <div class="contact-data">
-            <p><strong>Dirección</strong><br>Dirección pendiente</p>
-            <p><strong>Horario</strong><br>Horario pendiente</p>
-          </div>
-          <a class="button button-light" href="#" target="_blank" rel="noopener">Abrir en Google Maps</a>
+    <section class="menu-section" id="menu">
+      <div class="menu-inner">
+        <div class="section-tag">02 / NUESTRO MENÚ</div>
+
+        <div class="menu-heading">
+          <h2>¿Qué se le antoja<br><em>hoy, pues?</em></h2>
+          <p>
+            Aquí aparecerán los productos reales con sus ingredientes,
+            precios y fotografías.
+          </p>
         </div>
 
-        <div class="map-placeholder">
-          <span>Google Maps</span>
-          <small>Aquí irá el mapa o enlace de ubicación</small>
+        <div class="products">
+          <article class="product-card">
+            <div class="product-photo photo-placeholder"><span>FOTO</span></div>
+            <div class="product-body">
+              <div class="product-top">
+                <h3>Arepa rellena</h3>
+                <strong>$00.000</strong>
+              </div>
+              <p>Ingredientes pendientes de información del cliente.</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-photo photo-placeholder"><span>FOTO</span></div>
+            <div class="product-body">
+              <div class="product-top">
+                <h3>Plátano asado</h3>
+                <strong>$00.000</strong>
+              </div>
+              <p>Ingredientes pendientes de información del cliente.</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-photo photo-placeholder"><span>FOTO</span></div>
+            <div class="product-body">
+              <div class="product-top">
+                <h3>Patacón</h3>
+                <strong>$00.000</strong>
+              </div>
+              <p>Ingredientes pendientes de información del cliente.</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-photo photo-placeholder"><span>FOTO</span></div>
+            <div class="product-body">
+              <div class="product-top">
+                <h3>Producto especial</h3>
+                <strong>$00.000</strong>
+              </div>
+              <p>Ingredientes pendientes de información del cliente.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="visitanos">
+      <div class="visit-inner">
+        <div class="section-tag orange">03 / CÓMO LLEGAR</div>
+
+        <div class="visit-grid">
+          <div>
+            <h2>Venga pues,<br><em>lo esperamos.</em></h2>
+
+            <div class="details">
+              <div>
+                <span>Dirección</span>
+                <p>Dirección pendiente</p>
+              </div>
+              <div>
+                <span>Horario</span>
+                <p>Horario pendiente</p>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-cream" target="_blank" rel="noopener">
+              Abrir ubicación <span>↗</span>
+            </a>
+          </div>
+
+          <div class="map-box">
+            <div>
+              <span>UBICACIÓN</span>
+              <small>Aquí conectaremos Google Maps</small>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -140,15 +173,18 @@
 
   <footer class="footer">
     <div>
-      <span class="footer-brand">EL MAIZAL</span>
+      <div class="footer-logo">EL MAIZAL</div>
       <p>El sabor que te devuelve a casa.</p>
     </div>
-    <div class="footer-links">
+
+    <div class="footer-nav">
       <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
       <a href="#menu">Menú</a>
-      <a href="#visitanos">Cómo llegar</a>
+      <a href="#visitanos">Ubicación</a>
     </div>
-    <p class="copyright">© <span id="year"></span> El Maizal</p>
+
+    <div class="copyright">© <span id="year"></span> El Maizal</div>
   </footer>
 
   <script src="js/script.js"></script>
