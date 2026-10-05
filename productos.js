@@ -320,4 +320,76 @@ const categoriasProductos = [
   { id: "frio", label: "Pa'l frío" },
   { id: "calor", label: "Pa'l calor" },
   { id: "otras", label: "Otras bebidas" }
-];
+];document.addEventListener("DOMContentLoaded", () => {
+  const contenedor = document.querySelector("#productos-grid");
+  const filtros = document.querySelector("#productos-filtros");
+
+  if (!contenedor || !filtros) return;
+
+  function mostrarProductos(categoria = "todos") {
+    const productosFiltrados =
+      categoria === "todos"
+        ? productos
+        : productos.filter(producto => producto.cat === categoria);
+
+    contenedor.innerHTML = "";
+
+    productosFiltrados.forEach(producto => {
+      const tarjeta = document.createElement("article");
+      tarjeta.className = "producto-card";
+
+      tarjeta.innerHTML = `
+        <img
+          src="images/productos/${producto.img}"
+          alt="${producto.name}"
+          loading="lazy"
+        >
+
+        <div class="producto-card-body">
+          <h3>${producto.name}</h3>
+
+          ${
+            producto.desc
+              ? `<p class="producto-desc">${producto.desc}</p>`
+              : ""
+          }
+
+          ${
+            producto.note
+              ? `<p class="producto-nota">${producto.note}</p>`
+              : ""
+          }
+
+          <p class="producto-precio">${producto.price}</p>
+        </div>
+      `;
+
+      contenedor.appendChild(tarjeta);
+    });
+  }
+
+  categoriasProductos.forEach(categoria => {
+    const boton = document.createElement("button");
+
+    boton.className = "producto-filtro";
+    boton.textContent = categoria.label;
+    boton.type = "button";
+
+    if (categoria.id === "todos") {
+      boton.classList.add("is-active");
+    }
+
+    boton.addEventListener("click", () => {
+      document
+        .querySelectorAll(".producto-filtro")
+        .forEach(btn => btn.classList.remove("is-active"));
+
+      boton.classList.add("is-active");
+      mostrarProductos(categoria.id);
+    });
+
+    filtros.appendChild(boton);
+  });
+
+  mostrarProductos();
+});
