@@ -308,6 +308,14 @@ h2 {
   margin-bottom: 18px;
   color: var(--brown);
 }
+.cta-title {
+  margin: 0 0 18px;
+  color: var(--brown);
+  font-family: "Afire Love", "Playfair Display", Georgia, serif;
+  font-size: clamp(2.6rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  font-weight: 400;
+}
 
 .cta > .container > p:not(.section-label) {
   margin-bottom: 28px;
