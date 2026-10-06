@@ -189,8 +189,25 @@ h2 {
 
 /* QUIÉNES SOMOS */
 .about-section {
-  padding: 110px 0 95px;
-  background: var(--white);
+    position: relative;
+    overflow: hidden;
+    background: var(--cream);
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/trama.png");
+    background-repeat: repeat;
+    background-size: 420px auto;
+    opacity: 0.30;
+    pointer-events: none;
+}
+
+.about-section > * {
+    position: relative;
+    z-index: 1;
 }
 
 .about-grid {
