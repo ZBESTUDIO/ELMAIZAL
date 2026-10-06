@@ -90,9 +90,11 @@ a { color: inherit; text-decoration: none; }
 
 .hero {
     width: 100%;
+    min-height: auto;
+    display: block;
     position: relative;
     overflow: hidden;
-    background: var(--cream);
+    background: transparent;
 }
 
 .hero img {
