@@ -1,30 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="El Maizal — El sabor que te devuelve a casa."
-    >
-
-    <title>El Maizal | El sabor que te devuelve a casa</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="productos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="El Maizal — El sabor que te devuelve a casa.">
+  <title>El Maizal | El sabor que te devuelve a casa</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="productos.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         ENCABEZADO / NAVEGACIÓN
-    ========================== -->
-    <header class="header">
+<header class="header">
   <div class="container nav-container">
-
     <a href="#inicio" class="logo-text">
       <img src="images/logo%20color.png" alt="El Maizal">
     </a>
@@ -34,326 +22,182 @@
       <a href="#productos">Productos</a>
       <a href="#ubicacion">Cómo llegar</a>
     </nav>
-
   </div>
 </header>
 
-    <main>
+<main>
 
-        <!-- =========================
-             HERO / PORTADA
-        ========================== -->
-      <section id="inicio" class="hero">
-
-    <img
-        class="hero-image"
-        src="images/banner.webp"
-        alt="El Maizal"
-    >
-
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <img class="hero-image" src="images/banner.webp" alt="El Maizal">
     <div class="hero-overlay"></div>
 
-    <div class="hero-content">
+    <div class="container hero-content">
+      <p class="hero-eyebrow">CONÓCENOS</p>
 
-        <p class="hero-eyebrow">
-            CONÓCENOS
-        </p>
+      <h1>
+        El sabor que te<br>
+        devuelve a casa
+      </h1>
 
-        <h1>
-            El sabor que te<br>
-            devuelve a casa
-        </h1>
+      <p class="hero-description">
+        Un lugar para compartir sabores, recuerdos
+        y esos platos que saben a hogar.
+      </p>
 
-        <p class="hero-description">
-            Un lugar para compartir sabores, recuerdos
-            y esos platos que saben a hogar.
-        </p>
-
+      <a href="#productos" class="button button-primary">
+        Ver nuestros sabores
+      </a>
     </div>
+  </section>
 
-</section>
+  <!-- QUIÉNES SOMOS -->
+  <section id="nosotros" class="about-section">
+    <div class="container about-grid">
 
-        <!-- =========================
-             QUIÉNES SOMOS
-        ========================== -->
-        <section id="nosotros" class="section about">
+      <div class="about-image image-placeholder">
+        <span>FOTO</span>
+      </div>
 
-            <div class="container about-grid">
+      <div class="about-content">
+        <p class="section-label">CONÓCENOS</p>
 
-                <div class="about-image image-placeholder">
-
-                    <!--
-                    AQUÍ IRÁ LA FOTO DE "QUIÉNES SOMOS"
-
-                    Cuando tengamos la foto:
-                    <img src="images/nosotros.webp"
-                         alt="El Maizal">
-                    -->
-
-                    <span>FOTO</span>
-
-                </div>
-
-
-                <div class="about-content">
-
-                    <p class="section-label">
-                        CONÓCENOS
-                    </p>
-
-                    <h2>
-                        El sabor que te devuelve a casa
-                    </h2>
-
-                    <p>
-                        Aquí irá el texto definitivo de
-                        “Quiénes somos” de El Maizal.
-                    </p>
-
-                    <p>
-                        Un lugar para compartir sabores,
-                        recuerdos y esos platos que saben
-                        a hogar.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             FRASE DE MARCA
-        ========================== -->
-        <section class="brand-message">
-
-            <div class="container">
-
-                <p>
-                    Hay sabores que no solo se comen,
-                    <strong>se recuerdan.</strong>
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PRODUCTOS
-        ========================== -->
-        <section id="productos" class="productos-section">
-
-    <div class="productos-header">
-
-        <p class="productos-eyebrow">
-            PARA ANTOJARSE
-        </p>
-
-        <h2>
-            Nuestros sabores
-        </h2>
+        <h2>El sabor que te devuelve a casa</h2>
 
         <p>
-            Esos sabores que saben a casa, preparados
-            para que quieras volver por otro.
+          Aquí irá el texto definitivo de “Quiénes somos” de El Maizal.
         </p>
 
-    </div>
+        <p>
+          Un lugar para compartir sabores, recuerdos y esos platos
+          que saben a hogar.
+        </p>
+      </div>
 
+    </div>
+  </section>
+
+  <!-- FRASE DE MARCA -->
+  <section class="brand-message">
+    <div class="container">
+      <p>
+        Hay sabores que no solo se comen,
+        <strong>se recuerdan.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="productos-section">
+
+    <div class="productos-header">
+      <p class="productos-eyebrow">PARA ANTOJARSE</p>
+
+      <h2>Nuestros sabores</h2>
+
+      <p>
+        Esos sabores que saben a casa, preparados para que quieras
+        volver por otro.
+      </p>
+    </div>
 
     <div id="productos-filtros" class="productos-filtros">
-        <!-- Los filtros se generan automáticamente -->
+      <!-- Los filtros se generan automáticamente -->
     </div>
-
 
     <div id="productos-grid" class="productos-grid">
-        <!-- Los productos se generan automáticamente -->
+      <!-- Los productos se generan automáticamente -->
     </div>
 
-</section>
+  </section>
 
+  <!-- UBICACIÓN -->
+  <section id="ubicacion" class="location-section">
+    <div class="container location-grid">
 
-        <!-- =========================
-             UBICACIÓN
-        ========================== -->
-        <section id="ubicacion" class="section location">
+      <div class="location-content">
+        <p class="section-label">ENCUÉNTRANOS</p>
 
-            <div class="container location-grid">
+        <h2>Ven a visitarnos</h2>
 
-                <div class="location-content">
+        <p>
+          Queremos que venir a El Maizal también se sienta
+          como volver a casa.
+        </p>
 
-                    <p class="section-label">
-                        ENCUÉNTRANOS
-                    </p>
+        <div class="location-details">
+          <div class="detail">
+            <h3>Dirección</h3>
+            <p>Dirección pendiente</p>
+          </div>
 
-                    <h2>
-                        Ven a visitarnos
-                    </h2>
-
-                    <p>
-                        Queremos que venir a El Maizal
-                        también se sienta como volver a casa.
-                    </p>
-
-
-                    <div class="location-details">
-
-                        <div class="detail">
-
-                            <h3>
-                                Dirección
-                            </h3>
-
-                            <p>
-                                Dirección pendiente
-                            </p>
-
-                        </div>
-
-
-                        <div class="detail">
-
-                            <h3>
-                                Horarios
-                            </h3>
-
-                            <p>
-                                Horarios pendientes
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <a
-                        href="#"
-                        class="button button-secondary"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Cómo llegar
-                    </a>
-
-                </div>
-
-
-                <div class="map-placeholder">
-
-                    <!--
-                    AQUÍ PODEMOS PONER EL MAPA
-                    DE GOOGLE MAPS CUANDO TENGAMOS
-                    LA UBICACIÓN DEFINITIVA.
-                    -->
-
-                    <span>MAPA</span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CTA / WHATSAPP
-        ========================== -->
-        <section class="cta">
-
-            <div class="container">
-
-                <p class="section-label">
-                    ¿SE TE ANTOJÓ?
-                </p>
-
-                <h2>
-                    Mijo, ¿quiere repetir?
-                </h2>
-
-                <p>
-                    Escríbenos y déjate consentir.
-                </p>
-
-                <a
-                    href="#"
-                    class="button button-primary"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Escríbenos por WhatsApp
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-    <footer class="footer">
-
-        <div class="container footer-content">
-
-            <div>
-
-                <h2>
-                    EL MAIZAL
-                </h2>
-
-                <p>
-                    El sabor que te devuelve a casa.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="#inicio">
-                    Inicio
-                </a>
-
-                <a href="#nosotros">
-                    Quiénes somos
-                </a>
-
-                <a href="#productos">
-                    Productos
-                </a>
-
-                <a href="#ubicacion">
-                    Cómo llegar
-                </a>
-
-            </div>
-
+          <div class="detail">
+            <h3>Horarios</h3>
+            <p>Horarios pendientes</p>
+          </div>
         </div>
 
+        <a href="#" class="button button-secondary"
+           target="_blank" rel="noopener noreferrer">
+          Cómo llegar
+        </a>
+      </div>
 
-        <div class="container footer-bottom">
+      <div class="map-placeholder">
+        <span>MAPA</span>
+      </div>
 
-            <p>
-                © <span id="year"></span> El Maizal.
-                Todos los derechos reservados.
-            </p>
+    </div>
+  </section>
 
-            <p>
-                Sitio web diseñado por ZB STUDIO.
-            </p>
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <p class="section-label">¿SE TE ANTOJÓ?</p>
 
-        </div>
+      <h2>Mijo, ¿quiere repetir?</h2>
 
-    </footer>
+      <p>Escríbenos y déjate consentir.</p>
 
+      <a href="#" class="button button-primary"
+         target="_blank" rel="noopener noreferrer">
+        Escríbenos por WhatsApp
+      </a>
+    </div>
+  </section>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
-    <script src="productos.js"></script>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-content">
+
+    <div>
+      <h2>EL MAIZAL</h2>
+      <p>El sabor que te devuelve a casa.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Quiénes somos</a>
+      <a href="#productos">Productos</a>
+      <a href="#ubicacion">Cómo llegar</a>
+    </div>
+
+  </div>
+
+  <div class="container footer-bottom">
+    <p>
+      © <span id="year"></span> El Maizal.
+      Todos los derechos reservados.
+    </p>
+
+    <p>Sitio web diseñado por ZB STUDIO.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="productos.js"></script>
 
 </body>
 </html>
