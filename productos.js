@@ -12,7 +12,7 @@ const productos = [
     "name": "Trio de Canasticas + Topins",
     "desc": "Conchitas de Plátano verde con guacamole, queso mozzarella y hogao.",
     "price": "$11.100 + Precio Adición",
-    "img": "trio-canasticas-topins.webp",
+    "img": "trio-canastas-topins.webp",
     "note": "Acompaña tus canasticas con la adición de tu preferencia."
   },
   {
@@ -20,42 +20,42 @@ const productos = [
     "name": "Carne desmechada",
     "desc": "",
     "price": "$6.200",
-    "img": "adiciones.webp"
+    "img": "carne-desmechada.webp"
   },
   {
     "cat": "adiciones",
     "name": "Pollo desmechado",
     "desc": "",
     "price": "$6.200",
-    "img": "adiciones.webp"
+    "img": "pollo-desmechado.webp"
   },
   {
     "cat": "adiciones",
     "name": "Chorizo",
     "desc": "",
     "price": "$10.400",
-    "img": "adiciones.webp"
+    "img": "chorizo.webp"
   },
   {
     "cat": "adiciones",
     "name": "Salchicha",
     "desc": "",
     "price": "$3.700",
-    "img": "adiciones.webp"
+    "img": "salchicha.webp"
   },
   {
     "cat": "adiciones",
     "name": "Maduritos",
     "desc": "",
     "price": "$3.100",
-    "img": "adiciones.webp"
+    "img": "maduritos.webp"
   },
   {
     "cat": "adiciones",
     "name": "Chicharrón",
     "desc": "",
     "price": "$8.100",
-    "img": "adiciones.webp"
+    "img": "chicharron.webp"
   },
   {
     "cat": "maduros",
@@ -225,35 +225,35 @@ const productos = [
     "name": "Aguapanela",
     "desc": "",
     "price": "$5.600",
-    "img": "pa-l-frio.webp"
+    "img": "aguapanela.webp"
   },
   {
     "cat": "frio",
     "name": "Aguapanela con leche",
     "desc": "",
     "price": "$6.600",
-    "img": "pa-l-frio.webp"
+    "img": "aguapanela.webp"
   },
   {
     "cat": "frio",
     "name": "Chocolate",
     "desc": "",
     "price": "$6.100",
-    "img": "pa-l-frio.webp"
+    "img": "chocolate.webp"
   },
   {
     "cat": "frio",
     "name": "Chocolate con leche",
     "desc": "",
     "price": "$7.100",
-    "img": "pa-l-frio.webp"
+    "img": "chocolate.webp"
   },
   {
     "cat": "frio",
     "name": "Adición de Quesillo",
     "desc": "",
     "price": "$3.300",
-    "img": "pa-l-frio.webp",
+    "img": "aguapanela.webp",
     "note": "Adición."
   },
   {
@@ -261,7 +261,7 @@ const productos = [
     "name": "Limonadas",
     "desc": "",
     "price": "$9.100",
-    "img": "pa-l-calor.webp",
+    "img": "limonada-hierbabuena.webp",
     "note": "Pregunta por la fruta de temporada."
   },
   {
@@ -269,7 +269,7 @@ const productos = [
     "name": "Jugos en agua",
     "desc": "",
     "price": "$8.000",
-    "img": "pa-l-calor.webp",
+    "img": "limonada-sandia.webp",
     "note": "Pregunta por la fruta de temporada."
   },
   {
@@ -277,7 +277,7 @@ const productos = [
     "name": "Jugos en leche",
     "desc": "",
     "price": "$9.500",
-    "img": "pa-l-calor.webp",
+    "img": "limonada-sandia.webp",
     "note": "Pregunta por la fruta de temporada."
   },
   {
@@ -320,7 +320,9 @@ const categoriasProductos = [
   { id: "frio", label: "Pa'l frío" },
   { id: "calor", label: "Pa'l calor" },
   { id: "otras", label: "Otras bebidas" }
-];document.addEventListener("DOMContentLoaded", () => {
+];
+
+document.addEventListener("DOMContentLoaded", () => {
   const contenedor = document.querySelector("#productos-grid");
   const filtros = document.querySelector("#productos-filtros");
 
