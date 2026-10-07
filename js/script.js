@@ -14,24 +14,23 @@ nav?.querySelectorAll("a").forEach(link => {
 });
 
 document.querySelector("#year").textContent = new Date().getFullYear();
-/* ANIMACIÓN DE SCROLL — QUIÉNES SOMOS */
-const aboutElements = document.querySelectorAll(
-  ".about-content h2, .about-content p"
-);
+/* ANIMACIÓN DE SCROLL */
+const scrollElements = document.querySelectorAll(".scroll-animate");
 
-const aboutObserver = new IntersectionObserver(
+const scrollObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
+        scrollObserver.unobserve(entry.target);
       }
     });
   },
   {
-    threshold: 0.2
+    threshold: 0.15
   }
 );
 
-aboutElements.forEach((element) => {
-  aboutObserver.observe(element);
+scrollElements.forEach((element) => {
+  scrollObserver.observe(element);
 });
