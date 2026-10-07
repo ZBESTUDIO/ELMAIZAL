@@ -338,7 +338,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     productosFiltrados.forEach(producto => {
       const tarjeta = document.createElement("article");
-      tarjeta.className = "producto-card";
+tarjeta.className = "producto-card scroll-animate";
 
       tarjeta.innerHTML = `
         <img
