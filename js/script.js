@@ -14,3 +14,24 @@ nav?.querySelectorAll("a").forEach(link => {
 });
 
 document.querySelector("#year").textContent = new Date().getFullYear();
+/* ANIMACIÓN DE SCROLL — QUIÉNES SOMOS */
+const aboutElements = document.querySelectorAll(
+  ".about-content h2, .about-content p"
+);
+
+const aboutObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  {
+    threshold: 0.2
+  }
+);
+
+aboutElements.forEach((element) => {
+  aboutObserver.observe(element);
+});
