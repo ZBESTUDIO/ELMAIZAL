@@ -511,20 +511,26 @@ h2 {
   font-style: normal !important;
   font-weight: normal !important;
 }
-/* ANIMACIÓN DE SCROLL — QUIÉNES SOMOS */
-.about-content h2,
-.about-content p {
+/* ANIMACIÓN DE SCROLL */
+.scroll-animate {
   opacity: 0;
   transform: translateY(35px);
   transition: opacity .8s ease, transform .8s ease;
 }
 
-.about-content h2.visible,
-.about-content p.visible {
+.scroll-animate.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-.about-content p {
+.scroll-delay-1 {
   transition-delay: .15s;
+}
+
+.scroll-delay-2 {
+  transition-delay: .3s;
+}
+
+.scroll-delay-3 {
+  transition-delay: .45s;
 }
