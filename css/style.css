@@ -457,7 +457,7 @@ h2 {
 
   .about-image { min-height: 280px; }
 
-  .map-placeholder { min-height: 300px; }
+  .map-placeholder { height: 300px; }
 
   .cta { padding: 80px 0; }
 }
