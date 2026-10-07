@@ -1,3 +1,4 @@
+document.documentElement.classList.add("js");
 const menuButton = document.querySelector(".menu-btn");
 const nav = document.querySelector(".nav");
 
