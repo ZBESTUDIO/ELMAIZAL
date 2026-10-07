@@ -15,8 +15,6 @@ nav?.querySelectorAll("a").forEach(link => {
 
 document.querySelector("#year").textContent = new Date().getFullYear();
 /* ANIMACIÓN DE SCROLL */
-const scrollElements = document.querySelectorAll(".scroll-animate");
-
 const scrollObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -31,6 +29,23 @@ const scrollObserver = new IntersectionObserver(
   }
 );
 
-scrollElements.forEach((element) => {
+/* Elementos que ya existen al cargar la página */
+document.querySelectorAll(".scroll-animate").forEach((element) => {
   scrollObserver.observe(element);
 });
+
+/* Elementos que se crean dinámicamente, como las tarjetas de productos */
+const productosGrid = document.querySelector("#productos-grid");
+
+if (productosGrid) {
+  const productosObserver = new MutationObserver(() => {
+    productosGrid.querySelectorAll(".scroll-animate:not(.visible)").forEach((element) => {
+      scrollObserver.observe(element);
+    });
+  });
+
+  productosObserver.observe(productosGrid, {
+    childList: true,
+    subtree: true
+  });
+}
