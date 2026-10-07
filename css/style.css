@@ -535,7 +535,12 @@ h2 {
 .js .scroll-delay-2 {
   transition-delay: .3s;
 }
-
+/* AJUSTE BOTÓN — CÓMO LLEGAR */
+.location-details .button {
+  justify-self: start;
+  width: auto;
+  height: auto;
+}
 .js .scroll-delay-3 {
   transition-delay: .45s;
 }
